@@ -4,6 +4,8 @@
 >
 > **Author: Simon Lee**
 
+[TOC]
+
 ## 1 Template
 
 ### 1.1 Template

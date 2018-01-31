@@ -2,153 +2,35 @@
 #include <cassert>
 
 ///////////////////////////////////////////////////////////////////////////////
-// PRIMITIVE_MAP
+// PRIMITIVE_MAP, you may use it for some basic traits
+
+#define T_MAP(t) \
+  X(t, char) \
+  X(t, unsigned char) \
+  X(t, short) \
+  X(t, unsigned short) \
+  X(t, int) \
+  X(t, unsigned int) \
+  X(t, long) \
+  X(t, unsigned long long) \
+  X(t, float) \
+  X(t, double) \
+  X(t, long double)
 
 #define PRIMITIVE_MAP \
-  X(char, char) \
-  X(char, unsigned char) \
-  X(char, short) \
-  X(char, unsigned short) \
-  X(char, int) \
-  X(char, unsigned int) \
-  X(char, long) \
-  X(char, unsigned long long) \
-  X(char, float) \
-  X(char, double) \
-  X(char, long double) \
-  X(unsigned char, char) \
-  X(unsigned char, unsigned char) \
-  X(unsigned char, short) \
-  X(unsigned char, unsigned short) \
-  X(unsigned char, int) \
-  X(unsigned char, unsigned int) \
-  X(unsigned char, long) \
-  X(unsigned char, unsigned long long) \
-  X(unsigned char, float) \
-  X(unsigned char, double) \
-  X(unsigned char, long double) \
-  X(short, char) \
-  X(short, unsigned char) \
-  X(short, short) \
-  X(short, unsigned short) \
-  X(short, int) \
-  X(short, unsigned int) \
-  X(short, long) \
-  X(short, unsigned long long) \
-  X(short, float) \
-  X(short, double) \
-  X(short, long double) \
-  X(unsigned short, char) \
-  X(unsigned short, unsigned char) \
-  X(unsigned short, short) \
-  X(unsigned short, unsigned short) \
-  X(unsigned short, int) \
-  X(unsigned short, unsigned int) \
-  X(unsigned short, long) \
-  X(unsigned short, unsigned long long) \
-  X(unsigned short, float) \
-  X(unsigned short, double) \
-  X(unsigned short, long double) \
-  X(int, char) \
-  X(int, unsigned char) \
-  X(int, short) \
-  X(int, unsigned short) \
-  X(int, int) \
-  X(int, unsigned int) \
-  X(int, long) \
-  X(int, unsigned long long) \
-  X(int, float) \
-  X(int, double) \
-  X(int, long double) \
-  X(unsigned int, char) \
-  X(unsigned int, unsigned char) \
-  X(unsigned int, short) \
-  X(unsigned int, unsigned short) \
-  X(unsigned int, int) \
-  X(unsigned int, unsigned int) \
-  X(unsigned int, long) \
-  X(unsigned int, unsigned long long) \
-  X(unsigned int, float) \
-  X(unsigned int, double) \
-  X(unsigned int, long double) \
-  X(long, char) \
-  X(long, unsigned char) \
-  X(long, short) \
-  X(long, unsigned short) \
-  X(long, int) \
-  X(long, unsigned int) \
-  X(long, long) \
-  X(long, unsigned long long) \
-  X(long, float) \
-  X(long, double) \
-  X(long, long double) \
-  X(unsigned long, char) \
-  X(unsigned long, unsigned char) \
-  X(unsigned long, short) \
-  X(unsigned long, unsigned short) \
-  X(unsigned long, int) \
-  X(unsigned long, unsigned int) \
-  X(unsigned long, long) \
-  X(unsigned long, unsigned long long) \
-  X(unsigned long, float) \
-  X(unsigned long, double) \
-  X(unsigned long, long double) \
-  X(long long, char) \
-  X(long long, unsigned char) \
-  X(long long, short) \
-  X(long long, unsigned short) \
-  X(long long, int) \
-  X(long long, unsigned int) \
-  X(long long, long) \
-  X(long long, unsigned long long) \
-  X(long long, float) \
-  X(long long, double) \
-  X(long long, long double) \
-  X(unsigned long long, char) \
-  X(unsigned long long, unsigned char) \
-  X(unsigned long long, short) \
-  X(unsigned long long, unsigned short) \
-  X(unsigned long long, int) \
-  X(unsigned long long, unsigned int) \
-  X(unsigned long long, long) \
-  X(unsigned long long, unsigned long long) \
-  X(unsigned long long, float) \
-  X(unsigned long long, double) \
-  X(unsigned long long, long double) \
-  X(float, char) \
-  X(float, unsigned char) \
-  X(float, short) \
-  X(float, unsigned short) \
-  X(float, int) \
-  X(float, unsigned int) \
-  X(float, long) \
-  X(float, unsigned long long) \
-  X(float, float) \
-  X(float, double) \
-  X(float, long double) \
-  X(double, char) \
-  X(double, unsigned char) \
-  X(double, short) \
-  X(double, unsigned short) \
-  X(double, int) \
-  X(double, unsigned int) \
-  X(double, long) \
-  X(double, unsigned long long) \
-  X(double, float) \
-  X(double, double) \
-  X(double, long double) \
-  X(long double, char) \
-  X(long double, unsigned char) \
-  X(long double, short) \
-  X(long double, unsigned short) \
-  X(long double, int) \
-  X(long double, unsigned int) \
-  X(long double, long) \
-  X(long double, unsigned long long) \
-  X(long double, float) \
-  X(long double, double) \
-  X(long double, long double)
-
+  T_MAP(char) \
+  T_MAP(unsigned char) \
+  T_MAP(short) \
+  T_MAP(unsigned short) \
+  T_MAP(int) \
+  T_MAP(unsigned int) \
+  T_MAP(long) \
+  T_MAP(unsigned long) \
+  T_MAP(long long) \
+  T_MAP(unsigned long long) \
+  T_MAP(float) \
+  T_MAP(double) \
+  T_MAP(long double)
 
 ///////////////////////////////////////////////////////////////////////////////
 // types
