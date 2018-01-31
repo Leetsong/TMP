@@ -1,6 +1,8 @@
 # Template Meta Programming
 
-> A learning note. Codes typed here almost come from the [1].
+> **A learning note from reference [1].**
+>
+> **Author: Simon Lee**
 
 ## 1 Template
 
